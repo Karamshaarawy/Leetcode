@@ -7,7 +7,6 @@ var findMiddleIndex = function(nums) {
     let totalSum = nums.reduce((acc, num) => acc + num, 0);
     for (let i=0;i<nums.length;i++){
        totalSum-=nums[i]
-        right=nums.slice(i+1,nums.length)
         if(totalSum===leftSum){
             return i
         }
